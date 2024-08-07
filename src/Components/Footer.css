@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer hr{
+    color: #8376b9;
+    width: 50%;
+    opacity: 0.2;
+}
+footer p{
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 20px;
+    margin: 20px;
+}
+.footer-cont{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+}
+.icons{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+.links{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+.links::after{
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: #8176AF;
+    border-radius: 200px;
+    position: absolute;
+    top: calc(35% - 20px);
+    left: -10%;
+    opacity: 0.2;
+}
+.links::before{
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: #8176af57;
+    border-radius: 200px;
+    position: absolute;
+    top: calc(35% - 20px);
+    right:-10%;
+    opacity: 0.2;
+}
+.links a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.links a:hover{
+    color: #8176AF;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.icons .btn{
+    padding: 15px 20px ;
+    border: none;
+    background: linear-gradient(#8176AF, #C0B7E8);
+    color: var(--backgroundColor);
+    font-weight: bold;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.icons h1{
+    font-size: 1rem;
+    color: #fff;
+}
+.footer-shape{
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    z-index: 1;
+}
+.footer-shape img{
+    width: 100%;
+}
+.footer-cont .logo img{
+    width: 70%;
+}
+.footer-shape img{
+    max-width: 100%;
+}
+@media(max-width:1200px){
+    .footer-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-cont .logo{
+        display: none;
+    }
+    .footer-shape{
+        display: none;
+    }
+    footer p{
+        text-align: center;
+    }
+}

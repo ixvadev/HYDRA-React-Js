@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 50px;
+    margin: 100px auto;
+    background-image:radial-gradient(#433D60 , #211E2E ) ;
+    border-radius: 50px;
+
+}
+.form input{
+    padding: 10px 20px;
+    margin: 20px ;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.form input::placeholder{
+    color: #fff;
+}
+.three {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#box{
+    height: 100px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.btn #fillBtn{
+    width: 180px;
+    padding: 10px 30px ;
+    border: none;
+    background: linear-gradient(#8176AF, #C0B7E8);
+    color: var(--backgroundColor);
+    font-weight: bold;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+}

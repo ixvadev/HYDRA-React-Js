@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.cont .num {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 50%;
+    border: 10px solid #343045 ;
+    background: linear-gradient(#8176AF, #C0B7E8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343045;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 10px #0000003f;
+}
+.cont .arrow{
+
+    display: flex;
+    align-items:start;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 0.7rem;
+    max-width: 70%;
+    
+}
+.cont .arrow h1{
+    margin-left: 10px;
+}
